@@ -82,7 +82,7 @@ async function evaluateImageWithOpenAi(base64Image) {
         {
           role: "user",
           content: [
-            { type: "text", text: "Is this image art or not? Only use the word 'YES' ir 'No'" },
+            { type: "text", text: "Is this image art or not? Only use the word 'YES' or 'No'" },
             { type: "image_url", image_url: { "url": `data:image/png;base64,${base64Image}` } },
           ],
         },
